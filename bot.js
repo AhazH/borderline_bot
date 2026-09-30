@@ -18,7 +18,7 @@ const Database = require('better-sqlite3');
 
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
-if (!TOKEN || TOKEN === '8804352878:AAEX0awEjTpcjULNgzdYuMGmGrpY_-UfZqo') {
+if (!TOKEN || TOKEN === '') {
     console.error('❌ Error: Please set a valid TELEGRAM_BOT_TOKEN in your .env file!');
     process.exit(1);
 }
